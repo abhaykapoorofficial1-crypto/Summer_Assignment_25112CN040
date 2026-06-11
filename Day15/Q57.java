@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+
+public class Q57 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        System.out.println("Enter size of array");
+        int n = input.nextInt();
+        int[] arr = new int [n];
+        System.out.println("Enter array elements");
+        for(int i = 0 ; i<n ; i++){
+            arr[i] = input.nextInt();
+        }
+        System.out.println("Reversed Array is ");
+        for(int i = n-1 ; i>=0 ; i--){
+            System.out.println(arr[i]+ " ");
+        }
+    }
+}
